@@ -1,0 +1,57 @@
+jimmy:
+  owner_name: Jimmy Page
+  picture: pacific.jpg
+  owner_picture: jimmy.jpg
+  name: Jimmy's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  flat_rating: 4
+  max_guests_number: 2
+  bathrooms: 1
+  bed_type: Real Bed
+  bedrooms: 1
+  beds: 1
+  property_type: Apartment
+  room_type: Entire home/apt
+  kitchen: false
+  tv: false
+  welcome_drink: true
+robert:
+  owner_name: Robert Plant
+  picture: atlantic.jpg
+  owner_picture: robert.jpg
+  name: Robert's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  flat_rating: 4
+  max_guests_number: 6
+  bathrooms: 2
+  bed_type: Real Bed
+  bedrooms: 3
+  beds: 3
+  property_type: Apartment
+  room_type: Entire home/apt
+  kitchen: true
+  tv: true
+  welcome_drink: true
+john:
+  owner_name: John Bonham
+  picture: antarctic.jpg
+  owner_picture: john.jpg
+  name: John's home
+  summary: Superb duplex in Brussels
+  city: Brussels, Belgium
+  wifi: false
+  flat_rating: 5
+  max_guests_number: 9
+  bathrooms: 4
+  bed_type: Real Bed
+  bedrooms: 5
+  beds: 6
+  property_type: Apartment
+  room_type: Entire home/apt
+  kitchen: true
+  tv: true
+  welcome_drink: false

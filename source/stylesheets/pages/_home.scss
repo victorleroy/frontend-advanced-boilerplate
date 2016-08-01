@@ -11,10 +11,18 @@
   font-weight: bold;
 }
 
-.team-avatar {
-  width: 80px;
-}
-
 .wrapper-grey {
   background-color: $gray-light;
+}
+
+.row {
+  padding: 20px;
+}
+
+.header-flat form {
+    margin: 20px 0;
+    margin-right: 0;
+    background: $gray-lighter;
+    padding: 15px;
+    border-radius: 3px;
 }
