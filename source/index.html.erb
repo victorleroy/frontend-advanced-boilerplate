@@ -1,10 +1,122 @@
----
-title: Le Wagon Middleman boilerplate
----
+<body>
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpeg');">
+      <div class="banner-content">
+        <h1>Welcome home</h1>
+        <p>Rent unique places to stay from local hosts in 5 oceans and 150+ seas.</p>
+        <form action="#" class="form-inline">
+          <input type="text" class="form-control input-lg" placeholder="checkin">
+          <input type="text" class="form-control input-lg" placeholder="checkout">
+          <select name="" id="" class="form-control input-lg">
+            <option value="1">1 person</option>
+            <option value="2">2 persons</option>
+            <option value="3">3 persons</option>
+          </select>
+          <input type="submit" class="btn btn-primary btn-lg" value="Search">
+        </form>
+      </div>
+    </div>
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+     <div class="text-center padded" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <%= image_tag "globe.png" %>
+            <h2>Discover the world</h2>
+            <p>The earth is your new home.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <%= image_tag "dollar.png" %>
+            <h2>Pay online</h2>
+            <p>No cash issues anymore</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <%= image_tag "beer.png" %>
+              <h2>Meet people</h2>
+              <p>Discover new culture and lifestyle.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 ">
+            <%= image_tag "heart.png" %>
+              <h2>Share and love</h2>
+              <p>Join a community you will <love class=""></love></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-grey padded">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/pacific.jpg');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>Vlad's home</h2>
+                <p>Nice weather</p>
+              </div>
+                <%= image_tag "vlad.jpg", class: "card-user avatar" %>
+                <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/atlantic.jpg');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>Donald's home</h2>
+                <p>Wild landscapes</p>
+              </div>
+                <%= image_tag "donald.jpg", class: "card-user avatar" %>
+                <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/antarctic.jpg');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>François's home</h2>
+                <p>For the adventurers</p>
+              </div>
+                <%= image_tag "francois.jpg", class: "card-user avatar" %>
+                <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center padded">
+      <h2>Want some infos ?</h2>
+      <p>Leave us your mail and get news from us</p>
+        <div class="form text-center">
+          <form action="#">
+            <label for="your-email">Your email</label>
+            <input type="email" id="your-email" placeholder="bob@gmail.com">
+            <input type="submit" value="Submit" class="btn btn-primary">
+          </form>
+        </div>
+    </div>
+
+
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(-17.825986, -149.480510);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+
